@@ -1,11 +1,32 @@
-const fs = require('../fs')
+const fs = require('fs')
 //import *  fs from 'fs';
 
-fs.writeFile('arquivo.txt', 'TreinaWeb', (err) => {
-    if (err) {
-        console.error(err);
-    }
+// fs.writeFile('arquivo.txt', 'TreinaWeb', (err) => {
+//     if (err) {
+//         console.error(err);
+//     }
 
-console.log('Arquivo criado com sucesso!')
+// console.log('Arquivo criado com sucesso!')
 
-})
+// })
+
+// fs.appendFile('arquivo.txt', 'TreinaWeb 22', (err) => {
+//     if (err) {
+//         console.error(err);
+//     }
+
+// console.log('Arquivo atualizado com sucesso!')
+
+// })
+
+// fs.readFile('arquivo.txt', (err, data) => {
+//     if (err) {
+//         console.error(err);
+//     }
+
+// console.log(data.toString());
+
+// })
+
+let data = fs.readFileSync('arquivo.txt');
+console.log(data.toString());
