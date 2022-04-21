@@ -1,3 +1,4 @@
+
 const http = require('http');
 
 // import * as http from 'http';
@@ -9,7 +10,7 @@ const http = require('http');
 // })
 
 // serverHttp.listen('3000', () => {
-//     console.log('Servidor iniciado na porta 3000!')
+//     console.log('Servidor iniciado na porta 3000!');
 // })
 
 const serverHttp = http.createServer((req, res) => {
@@ -27,6 +28,6 @@ const serverHttp = http.createServer((req, res) => {
     }
 })
 
-serverHttp.listen('3000', () => {
-    console.log('Servidor iniciado na porta 3000!')
+serverHttp.listen('3001', () => {
+    console.log('Servidor iniciado na porta 3001!')
 })
