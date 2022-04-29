@@ -1,8 +1,6 @@
 // var a : string = 'TreinaWeb';
 // var b: number = 123;
 
-import { isConstructorDeclaration } from "typescript";
-
 // function exemplo(numero: number, texto: string) {
 //     console.log(texto, numero);
 // }
@@ -13,7 +11,9 @@ import { isConstructorDeclaration } from "typescript";
 
 const fs = require('fs');
 
-fs.writeFile('arquivo.txt', 'TreinaWeb', (err) => {
+var endereço: string = 'Av. Paulista 2000';
+
+fs.writeFile('arquivo.txt', endereço, (err) => {
     if(err){
     console.error(err);
  }
